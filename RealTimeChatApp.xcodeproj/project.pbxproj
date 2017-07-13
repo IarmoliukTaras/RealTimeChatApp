@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D6E47671F16C1540059FA63 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E47661F16C1540059FA63 /* NewMessageController.swift */; };
+		9D6E476A1F1762480059FA63 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E47691F1762480059FA63 /* User.swift */; };
 		9D8792B41F14DDF8006DC0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */; };
-		9D8792B61F14DDF8006DC0E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8792B51F14DDF8006DC0E1 /* ViewController.swift */; };
+		9D8792B61F14DDF8006DC0E1 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8792B51F14DDF8006DC0E1 /* MessagesController.swift */; };
 		9D8792B91F14DDF8006DC0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8792B71F14DDF8006DC0E1 /* Main.storyboard */; };
 		9D8792BB1F14DDF8006DC0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8792BA1F14DDF8006DC0E1 /* Assets.xcassets */; };
 		9D8792BE1F14DDF8006DC0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8792BC1F14DDF8006DC0E1 /* LaunchScreen.storyboard */; };
@@ -20,9 +22,11 @@
 /* Begin PBXFileReference section */
 		79DAC56460C777E73C11D909 /* Pods_RealTimeChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470CAB5A8650A62C1C6D0C2 /* Pods-RealTimeChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealTimeChatApp/Pods-RealTimeChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D6E47661F16C1540059FA63 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		9D6E47691F1762480059FA63 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D8792B01F14DDF8006DC0E1 /* RealTimeChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D8792B51F14DDF8006DC0E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D8792B51F14DDF8006DC0E1 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		9D8792B81F14DDF8006DC0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D8792BA1F14DDF8006DC0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8792BD1F14DDF8006DC0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9D6E47681F17623B0059FA63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E47691F1762480059FA63 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9D8792A71F14DDF8006DC0E1 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 		9D8792B21F14DDF8006DC0E1 /* RealTimeChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				9D6E47681F17623B0059FA63 /* Model */,
 				9D8792C51F14DFF2006DC0E1 /* Controller */,
 				9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */,
 				9D8792B71F14DDF8006DC0E1 /* Main.storyboard */,
@@ -97,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				9D8792C61F14E00B006DC0E1 /* LoginController.swift */,
-				9D8792B51F14DDF8006DC0E1 /* ViewController.swift */,
+				9D8792B51F14DDF8006DC0E1 /* MessagesController.swift */,
+				9D6E47661F16C1540059FA63 /* NewMessageController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -227,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8792B61F14DDF8006DC0E1 /* ViewController.swift in Sources */,
+				9D6E47671F16C1540059FA63 /* NewMessageController.swift in Sources */,
+				9D8792B61F14DDF8006DC0E1 /* MessagesController.swift in Sources */,
 				9D8792C71F14E00B006DC0E1 /* LoginController.swift in Sources */,
+				9D6E476A1F1762480059FA63 /* User.swift in Sources */,
 				9D8792B41F14DDF8006DC0E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +411,7 @@
 				9D8792C41F14DDF8006DC0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
