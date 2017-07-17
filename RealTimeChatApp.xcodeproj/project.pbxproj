@@ -10,6 +10,7 @@
 		9D6E47671F16C1540059FA63 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E47661F16C1540059FA63 /* NewMessageController.swift */; };
 		9D6E476A1F1762480059FA63 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E47691F1762480059FA63 /* User.swift */; };
 		9D6E476C1F1770490059FA63 /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E476B1F1770490059FA63 /* LoginController+handlers.swift */; };
+		9D6E476F1F18D03C0059FA63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E476E1F18D03C0059FA63 /* Extensions.swift */; };
 		9D8792B41F14DDF8006DC0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */; };
 		9D8792B61F14DDF8006DC0E1 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8792B51F14DDF8006DC0E1 /* MessagesController.swift */; };
 		9D8792B91F14DDF8006DC0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8792B71F14DDF8006DC0E1 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		9D6E47661F16C1540059FA63 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		9D6E47691F1762480059FA63 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D6E476B1F1770490059FA63 /* LoginController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		9D6E476E1F18D03C0059FA63 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9D8792B01F14DDF8006DC0E1 /* RealTimeChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D8792B51F14DDF8006DC0E1 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		9D6E476D1F18D0250059FA63 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9D6E476E1F18D03C0059FA63 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9D8792A71F14DDF8006DC0E1 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		9D8792B21F14DDF8006DC0E1 /* RealTimeChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				9D6E476D1F18D0250059FA63 /* Helpers */,
 				9D6E47681F17623B0059FA63 /* Model */,
 				9D8792C51F14DFF2006DC0E1 /* Controller */,
 				9D8792B31F14DDF8006DC0E1 /* AppDelegate.swift */,
@@ -250,6 +261,7 @@
 				9D8792C71F14E00B006DC0E1 /* LoginController.swift in Sources */,
 				9D6E476A1F1762480059FA63 /* User.swift in Sources */,
 				9D8792B41F14DDF8006DC0E1 /* AppDelegate.swift in Sources */,
+				9D6E476F1F18D03C0059FA63 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
